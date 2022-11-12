@@ -1,0 +1,122 @@
+* { 
+    font-family: Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body { 
+    background: rgb(26,25,31);
+    background: linear-gradient(180deg, rgba(26,25,31,1) 0%, rgba(10,9,11,1) 68%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo { 
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.container-input { 
+    max-width: 480px;
+    margin: 14px 0;
+
+}
+
+.container-input span { 
+    color: white;
+    font-size: 22px;
+}
+
+.slider { 
+    -webkit-appearance: none;
+    width: 100%;
+    height: 18px;
+    margin-top: 8px;
+    border-radius: 5px;
+    background-color: #dfdfdf;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-cta { 
+    height: 40px;
+    margin-top: 40px;
+    background-color: #3EB72B;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.5s;
+}
+
+.button-cta:hover { 
+    background-color: #338f24;
+    transition: 0.2s;
+}
+
+.container-password-hide { 
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title { 
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password { 
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border: 1px solid #313131;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.5s;
+}
+
+.password:hover { 
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.tooltip { 
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background-color: rgb(34, 33, 33);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide { 
+    display: none;
+}
+
+.container-password-hide:hover .tooltip { 
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
